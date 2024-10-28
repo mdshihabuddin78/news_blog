@@ -40,7 +40,7 @@
                 </div>
 
 
-                <div class="box-content">
+                <div class="box-content ">
 
                     <div class="card-body">
                         <form method="post" action="{{route('cat.submit')}}">

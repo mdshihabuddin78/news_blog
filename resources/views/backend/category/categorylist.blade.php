@@ -68,7 +68,7 @@
 {{--                        </div>--}}
                         <div class="modal-body">
                             <form @submit.prevent="submit">
-                                <div class="form-group">
+                                <div class="form-group" >
                                     <label for="categoryName">Category Name</label>
                                     <input v-model="categoryForm.category_name" id="categoryName" class="form-control" required>
                                 </div>
