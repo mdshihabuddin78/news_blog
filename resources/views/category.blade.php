@@ -4,6 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                @if(count($news)>0)
                     <div class="row">
                         <div class="col-12">
                             <div class="section-title">
@@ -39,8 +40,20 @@
 
                         @endforeach
                     </div>
-
                 </div>
+                @else
+                        <!-- 404 Not Found Design -->
+                        <div class="error-page text-center py-5" style="min-height: 60vh;">
+                            <h1 class="display-1 font-weight-bold text-danger">404</h1>
+                            <h2 class="text-uppercase font-weight-bold mb-3">Oops! Page Not Found</h2>
+                            <p class="text-muted mb-4">
+                                Sorry, we couldn't find the page you were looking for. It might have been moved or deleted.
+                            </p>
+                            <a href="{{ url('/') }}" class="btn btn-primary btn-lg text-uppercase">
+                                <i class="fas fa-home mr-2"></i>Back to Home
+                            </a>
+                        </div>
+                    @endif
 
                 <div class="row">
                     <div class="col-12">
